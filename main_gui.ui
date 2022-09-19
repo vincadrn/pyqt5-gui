@@ -29,10 +29,10 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="input_label">
+   <widget class="QLabel" name="prompt_label">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>40</x>
       <y>20</y>
       <width>131</width>
       <height>16</height>
@@ -46,7 +46,7 @@
     <property name="geometry">
      <rect>
       <x>270</x>
-      <y>90</y>
+      <y>120</y>
       <width>75</width>
       <height>23</height>
      </rect>
@@ -55,24 +55,24 @@
      <string>OK</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="delete_button">
+   <widget class="QPushButton" name="clear_button">
     <property name="geometry">
      <rect>
       <x>160</x>
-      <y>90</y>
+      <y>120</y>
       <width>75</width>
       <height>23</height>
      </rect>
     </property>
     <property name="text">
-     <string>Delete</string>
+     <string>Clear</string>
     </property>
    </widget>
    <widget class="QPushButton" name="info_button">
     <property name="geometry">
      <rect>
-      <x>360</x>
-      <y>52</y>
+      <x>470</x>
+      <y>70</y>
       <width>41</width>
       <height>21</height>
      </rect>
@@ -81,14 +81,50 @@
      <string>Help</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="line_edit">
+   <widget class="QLineEdit" name="num_edit">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>50</y>
+      <x>40</x>
+      <y>70</y>
       <width>201</width>
       <height>21</height>
      </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="den_edit">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>70</y>
+      <width>201</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="num_label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>50</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pembilang:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="den_label">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>50</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Penyebut:</string>
     </property>
    </widget>
   </widget>
@@ -110,7 +146,7 @@
   </action>
  </widget>
  <tabstops>
-  <tabstop>delete_button</tabstop>
+  <tabstop>clear_button</tabstop>
   <tabstop>ok_button</tabstop>
   <tabstop>info_button</tabstop>
  </tabstops>
