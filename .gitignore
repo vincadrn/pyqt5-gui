@@ -1,2 +1,4 @@
 __pycache__
-example
+example*
+pyqt5-gui-*
+*.zip
