@@ -1,0 +1,11 @@
+"""Template"""
+welcome_message = "Welcome, {}.\nPlease select \"Sign Language\" or \"Shop Analyzer\" to start."
+conf_msg = "User {} has been created successfully!"
+profile_msg = "Signed in as: {}"
+usage_msg = "No. of usage before: {} time(s)"
+activity_start = "Shop analyzer started on {}."
+activity_end = "Shop analyzer ended on {}."
+
+"""Style"""
+button_selected = "background-color: rgb(168, 218, 220);"
+button_deselected = ""
