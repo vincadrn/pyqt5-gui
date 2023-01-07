@@ -93,7 +93,7 @@ QPushButton{
               <string/>
              </property>
              <property name="pixmap">
-              <pixmap>:/icons/fugu_icon/icons/user--plus.png</pixmap>
+              <pixmap resource="TugasCaslab/resources.qrc">:/icons/fugu_icon/icons/user--plus.png</pixmap>
              </property>
              <property name="scaledContents">
               <bool>true</bool>
@@ -230,7 +230,7 @@ QPushButton{
               <string>Register</string>
              </property>
              <property name="icon">
-              <iconset>
+              <iconset resource="TugasCaslab/resources.qrc">
                <normaloff>:/icons/fugu_icon/icons-shadowless/door-open-out.png</normaloff>:/icons/fugu_icon/icons-shadowless/door-open-out.png</iconset>
              </property>
              <property name="iconSize">
@@ -278,7 +278,7 @@ QPushButton{
               <string/>
              </property>
              <property name="pixmap">
-              <pixmap>:/icons/fugu_icon/icons/user--arrow.png</pixmap>
+              <pixmap resource="TugasCaslab/resources.qrc">:/icons/fugu_icon/icons/user--arrow.png</pixmap>
              </property>
              <property name="scaledContents">
               <bool>true</bool>
@@ -399,7 +399,7 @@ QPushButton{
               <string>Log In</string>
              </property>
              <property name="icon">
-              <iconset>
+              <iconset resource="TugasCaslab/resources.qrc">
                <normaloff>:/icons/fugu_icon/icons-shadowless/door-open-out.png</normaloff>:/icons/fugu_icon/icons-shadowless/door-open-out.png</iconset>
              </property>
              <property name="iconSize">
@@ -436,9 +436,7 @@ QPushButton{
   </widget>
  </widget>
  <resources>
-  <include location="resources.qrc"/>
-  <include location="resources.qrc"/>
-  <include location="resources.qrc"/>
+  <include location="TugasCaslab/resources.qrc"/>
  </resources>
  <connections/>
 </ui>

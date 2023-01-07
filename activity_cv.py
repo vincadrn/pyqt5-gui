@@ -3,8 +3,6 @@ import time
 from cv2 import WINDOW_FULLSCREEN
 import numpy as np
 from matplotlib import pyplot as plt
-# from drawnow import *
-# import pickle
 
 width = 1280
 height = 720
@@ -30,14 +28,10 @@ def run():
         nonlocal evt, pntX1, pntX2, pntY1, pntY2
 
         if event==cv2.EVENT_LBUTTONDOWN:
-            #print('Mouse Event Was: ', event)
-            #print('at Position', xPos, yPos)
             pntX1 = xPos
             pntY1 = yPos
             evt = event
-        if event==cv2.EVENT_LBUTTONUP:
-            #print('Mouse Event Was: ', event)
-            #print('at Position', xPos, yPos)   
+        if event==cv2.EVENT_LBUTTONUP: 
             pntX2 = xPos
             pntY2 = yPos
             evt = event
@@ -81,8 +75,8 @@ def run():
     Roi_Activated = False
     Roi_Activity = False
     No_More_Click = False
-    Location = "Supermarket"
-    Isle_Number = 7
+    Location = ""
+    Isle_Number = 0
     Activity = 0
     Activity_Start = 70
     Activity_Time = 0
@@ -163,8 +157,6 @@ def run():
         if Start == True and Roi_Created == True and Roi_Activated == True:
             cv2.putText(Was_Grey_Frame, "Shop Activity Analyzer : ", (int(width * .01), int(height * .04)), Font_Title, Font_Size, White, Font_Thickness)
             cv2.putText(Was_Grey_Frame, "Details : ", (int(width * .01), int(height * .12)), Font_Title, Font_Size, White, Font_Thickness)
-            cv2.putText(Was_Grey_Frame, "Location : " + (Location), (int(width * .01), int(height * .16)), Font_Title, Font_Size_Small, White, Font_Thickness)
-            cv2.putText(Was_Grey_Frame, "Isle Number : " + str(Isle_Number), (int(width * .01), int(height * .20)), Font_Title, Font_Size_Small, White, Font_Thickness)
             cv2.putText(Was_Grey_Frame, "Time : ", (int(width * .01), int(height * .28)), Font_Title, Font_Size, White, Font_Thickness)
             cv2.putText(Was_Grey_Frame, "Start Date : "+str(Start_Day)+"-"+str(Start_Month)+"-"+str(Start_Year), (int(width * .01), int(height * .32)), Font_Title, Font_Size_Small, White, Font_Thickness)
             cv2.putText(Was_Grey_Frame, "Start Time : "+str(Start_Hour)+":"+str(Start_Minute)+":"+str(Start_Second), (int(width * .01), int(height * .36)), Font_Title, Font_Size_Small, White, Font_Thickness)
@@ -233,15 +225,5 @@ def run():
             Activity_Number_Graph.pop(0)
             Average_Time_Graph.pop(0)
     cap.release()
-
-    # fig, axes = plt.subplots(figsize = (12, 6))
-    # axes.set_ylim(0, 80)
-    # axes.set_title('Shop Activity Analyzer')
-    # axes.grid(color = 'b', alpha = 0.5, linestyle = 'dashed', linewidth = 0.5)
-    # axes.set_ylabel('Number Activity $(Person)$', fontsize = 18, color = 'green')
-    # axes.set_xlabel('Average Time $(s)$', fontsize = 18, color = 'blue')
-    # axes.plot(Average_Time_Graph, Activity_Number_Graph, color = 'green', lw=2, ls = '-', marker = 'o', markersize = 8, label = 'Activity')
-    # axes.legend(loc = 'upper left')
-    # plt.show()
 
     return Average_Time_Graph, Activity_Number_Graph

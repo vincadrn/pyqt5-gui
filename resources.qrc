@@ -7444,6 +7444,8 @@
     <file>icons/zoom-out.svg</file>
   </qresource>
   <qresource prefix="images">
+    <file>Poster (2).png</file>
+    <file>Poster.png</file>
     <file>R4spkB.png</file>
     <file>bg.png</file>
     <file>1rY39i5.webp</file>

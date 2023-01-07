@@ -1,5 +1,7 @@
 __pycache__
+.vscode
 example*
 pyqt5-gui-*
 *.zip
 gui*
+sign.*
