@@ -3,5 +3,5 @@ __pycache__
 example*
 pyqt5-gui-*
 *.zip
-gui*
+gui_nata
 sign.*
